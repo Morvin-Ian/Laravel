@@ -1,6 +1,6 @@
 <ul>
-    <li><a href="#"><i class="fas fa-user"></i>  Register </a> </li>
-    <li> <a href="#"><i class="fas fa-arrow-right"></i>  Login</a>  </li>
+    <li><a href="/register"><i class="fas fa-user"></i>  Register </a> </li>
+    <li> <a href="/login"><i class="fas fa-arrow-right"></i>  Login</a>  </li>
 
 </ul>
 

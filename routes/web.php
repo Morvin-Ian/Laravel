@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\JobController;
-use Illuminate\Http\Request;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Job;
 
@@ -16,12 +16,27 @@ use App\Models\Job;
 |
 */
 
-Route::post('/jobs', [JobController::class, 'post']);
 
+//get
+Route::get('/', [JobController::class, 'index']);
+Route::get('/jobs/{job}', [JobController::class, 'single']);
+
+// create
+Route::post('/jobs', [JobController::class, 'post']);
 Route::get('/jobs/create', [JobController::class, 'create']);
 
-Route::get('/', [JobController::class, 'index']);
+//update
+Route::put('/jobs/{job}', [JobController::class, 'update']);
+Route::get('/jobs/{job}/edit', [JobController::class, 'edit']);
+
+//delete
+Route::delete('/jobs/{job}', [JobController::class, 'destroy']);
+
+// rergister
+Route::get('/register', [UserController::class, 'register']);
+
+// login
+Route::get('/login', [UserController::class, 'login']);
 
 
-Route::get('/jobs/{job}', [JobController::class, 'single']);
 

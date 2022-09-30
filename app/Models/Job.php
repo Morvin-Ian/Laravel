@@ -9,9 +9,7 @@ class Job extends Model
 {
     use HasFactory;
 
-    protected $fillable =['title', 'company','location', 'email', 'tags','description'];
+    protected $fillable =['title', 'company','location', 'email', 'tags' ,'logo','description'];
 
-    public function Jobfilter($query, array $filters){
-        dd($filters['tag']);
-    }
+
 }

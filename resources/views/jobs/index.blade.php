@@ -7,7 +7,7 @@
 
 
 
-<a href="/jobs/create" class="mx-5 mb-1"> + Post Gigs</a>
+<a href="/jobs/create" class=" nav-link mx-5 mb-1"> + Post Gigs</a>
 <div class="d-flex flex-wrap">
     @if(count($jobs) != 0)
         @foreach ($jobs as $job)
@@ -16,7 +16,7 @@
         </div>
         @endforeach
     @else
-        <h6>No Jobs availabel</h6>
+        <h6 class="lead m-5">No Jobs available</h6>
     @endif
 
 </div>

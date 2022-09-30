@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Brace</title>
 </head>
+<x-flash />
 <body>
     <style>
         .display-3{

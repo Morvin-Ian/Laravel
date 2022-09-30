@@ -6,4 +6,3 @@
       <button type="submit" class="btn btn-dark mb-3 rounded-lg">Search</button>
     </div>
   </form>
-  <x-flash />

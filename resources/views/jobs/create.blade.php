@@ -2,7 +2,7 @@
 
 @section('content')
     
-<form class='m-5 ps-5 pe-5' action="/jobs" method="POST">
+<form class='m-5 ps-5 pe-5' action="/jobs" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="mb-2 ">
       <label for="exampleFormControlInput1" class="form-label">Job Title</label>
@@ -31,7 +31,7 @@
  
     <div class="mb-2 ">
         <label for="ExampleFormControlInput1" class="form-label">Company Logo</label>
-        <input type="file" class="form-control" name="logo">
+        <input type="file" class="form-control" name="logo" required>
     </div>
       
     <div class="mb-2 ">

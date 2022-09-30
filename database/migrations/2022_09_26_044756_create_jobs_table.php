@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('tags');
             $table->string('location');
             $table->string('company');
+            $table->string('logo');
             $table->string('email');
             $table->string('description');
             $table->timestamps();

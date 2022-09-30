@@ -3,7 +3,7 @@
 
  <div class="d-flex flex-wrap container ms-5 mt-5">
     <div class="me-1 ms-5">
-        <img style="border-radius: 5px; object-fit:cover;" src="{{asset('Images/hope.jpg')}}" class="image-fluid" alt="" height="100" width="100">
+        <img style="border-radius: 5px; object-fit:cover;" src="{{asset('storage/app/public/'.$job->logo)}}" class="image-fluid" alt="" height="100" width="100">
     
     </div>
     
