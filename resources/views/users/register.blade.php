@@ -2,7 +2,7 @@
 
 @section('content')
     
-<form class='m-5 ps-5 pe-5' action="/jobs" method="POST" enctype="multipart/form-data">
+<form class='m-5 ps-5 pe-5' action="/users" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="mb-2 ">
       <label for="exampleFormControlInput1" class="form-label">Username</label>
@@ -23,10 +23,15 @@
    
     <div class="mb-2 ">
         <label for="ExampleFormControlInput1" class="form-label">Password Confirmation</label>
-        <input type="password" class="form-control" name="password2" required>
+        <input type="password" class="form-control" name="password_confirmation" required>
     </div>
 
-    <button type="submit" class="btn btn-primary btn-default"style="padding-left: 2.5rem; padding-right: 2.5rem;">Register</button>
+    <div class="text-center text-lg-start mt-4 pt-2">
+        <button type="submit" class="btn btn-primary btn-sm"
+          style="padding-left: 2.5rem; padding-right: 2.5rem;">Register</button>
+        <p class="small fw-bold mt-2 pt-1 mb-0">Already have an account? <a href="/login"
+            class="link-danger">Login</a></p>
+      </div>
 </form>
 
 @endsection

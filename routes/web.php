@@ -16,14 +16,9 @@ use App\Models\Job;
 |
 */
 
-
-//get
-Route::get('/', [JobController::class, 'index']);
-Route::get('/jobs/{job}', [JobController::class, 'single']);
-
 // create
-Route::post('/jobs', [JobController::class, 'post']);
 Route::get('/jobs/create', [JobController::class, 'create']);
+Route::post('/jobs', [JobController::class, 'post']);
 
 //update
 Route::put('/jobs/{job}', [JobController::class, 'update']);
@@ -32,11 +27,21 @@ Route::get('/jobs/{job}/edit', [JobController::class, 'edit']);
 //delete
 Route::delete('/jobs/{job}', [JobController::class, 'destroy']);
 
+//get
+Route::get('/', [JobController::class, 'index']);
+Route::get('/jobs/{job}', [JobController::class, 'single']);
+
 // rergister
 Route::get('/register', [UserController::class, 'register']);
+Route::post('/users', [UserController::class, 'store_users']);
 
 // login
 Route::get('/login', [UserController::class, 'login']);
+Route::post('/login/authenticate', [UserController::class, 'authenticate']);
+
+
+// logout
+Route::get('/logout', [UserController::class, 'logout']);
 
 
 

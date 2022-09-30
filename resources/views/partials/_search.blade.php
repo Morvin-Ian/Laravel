@@ -1,4 +1,4 @@
-<form class="row ms-5 mt-3">
+<form class="row ms-5 mt-5">
     <div class="col-sm-8">
       <input type="search" class="form-control" id="search" placeholder="Search for Gigs">
     </div>

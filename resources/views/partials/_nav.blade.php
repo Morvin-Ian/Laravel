@@ -1,6 +1,12 @@
 <ul>
-    <li><a href="/register"><i class="fas fa-user"></i>  Register </a> </li>
-    <li> <a href="/login"><i class="fas fa-arrow-right"></i>  Login</a>  </li>
+    @auth
+        <li><a href="/"><i class="fas fa-user"></i> {{auth()->user()->name}} </a> </li>
+        <li> <a href="/jobs/manage"><i class="fa-solid fa-gear"></i>  Manage Gigs</a>  </li>
+        <li> <a href="/logout"><i class="fa-solid fa-gear"></i>  Logout</a>  </li>
+    @else
+        <li><a href="/register"><i class="fas fa-user"></i>  Register </a> </li>
+        <li> <a href="/login"><i class="fas fa-arrow-right"></i>  Login</a>  </li>
+    @endauth
 
 </ul>
 

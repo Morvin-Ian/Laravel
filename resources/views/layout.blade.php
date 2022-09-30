@@ -8,9 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Brace</title>
 </head>
-<x-flash />
-<body>
-    <style>
+
+  <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
         .display-3{
             background-color: red;
             color: white;
@@ -23,6 +25,9 @@
         }
     </style>
 
+
+
+<body>
     <a class ="display-3" href="/">
         N<strong style="color: black">G</strong>
     </a>
